@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marc/Documents/Clase/Programación/3r Trimestre/AC1/Ac1/Ac1.csproj",
+      "projectUniqueName": "/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/Ac1.csproj",
       "projectName": "Ac1",
-      "projectPath": "/Users/marc/Documents/Clase/Programación/3r Trimestre/AC1/Ac1/Ac1.csproj",
+      "projectPath": "/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/Ac1.csproj",
       "packagesPath": "/Users/marc/.nuget/packages/",
-      "outputPath": "/Users/marc/Documents/Clase/Programación/3r Trimestre/AC1/Ac1/obj/",
+      "outputPath": "/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marc/.nuget/NuGet/NuGet.Config"

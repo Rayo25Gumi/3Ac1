@@ -7,24 +7,57 @@ internal class Program
         string url = "https://api.wheretheiss.at/v1/satellites/25544";
         using (var client = new HttpClient())
         {
-            HttpResponseMessage response = client.GetAsync(url).Result;
-            string jsonResponse = response.Content.ReadAsStringAsync().Result;
+            string oldCountry = "a";
+            do
+            {
+                HttpResponseMessage response = client.GetAsync(url).Result;
+                string jsonResponse = response.Content.ReadAsStringAsync().Result;
 
-            var pokeApiObject = JsonConvert.DeserializeObject<Iss>(jsonResponse);
+                var data = JsonConvert.DeserializeObject<IssData>(jsonResponse);
 
-            double Latitud = issApiObject.Latitud;
-            double Longitud = pokeApiObject.growth_time;
-            Console.WriteLine(name);
-            Console.WriteLine(size);
+                double Latitud = data.Latitud;
+                double Longitud = data.Longitud;
+
+                Thread.Sleep(10000);
+
+                string urlgeo =
+                    $"http://api.geonames.org/countryCodeJSON?lat={Latitud}&lng={Longitud}&username=gumi";
+
+                HttpResponseMessage responsegeo = client.GetAsync(urlgeo).Result;
+                string jsonResponsegeo = responsegeo.Content.ReadAsStringAsync().Result;
+
+                var datageo = JsonConvert.DeserializeObject<Geo>(jsonResponsegeo);
+                string CountryName = datageo.CountryName;
+
+                if (CountryName != oldCountry && CountryName != "La iis no está en ningún país")
+                {
+                    oldCountry = CountryName;
+                    Console.WriteLine($"La iis ahora en {CountryName}");
+                }
+                else if (
+                    CountryName != oldCountry
+                    && CountryName == "La iis no está en ningún país"
+                )
+                {
+                    oldCountry = CountryName;
+                    Console.WriteLine(CountryName);
+                }
+            } while ("b" != "a");
         }
     }
 
-    private class Iss
+    private class IssData
     {
         [JsonProperty("latitude")]
-        public string Latitud { get; set; }
+        public required double Latitud { get; set; }
 
         [JsonProperty("longitude")]
-        public string Longitud { get; set; }
+        public required double Longitud { get; set; }
+    }
+
+    private class Geo
+    {
+        [JsonProperty("CountryName", NullValueHandling = NullValueHandling.Ignore)] //esta linea se la pedí a chatgpt por si la iis estaba en unas cordenadas sin país :p
+        public string CountryName { get; set; } = "La iis no está en ningún país";
     }
 }

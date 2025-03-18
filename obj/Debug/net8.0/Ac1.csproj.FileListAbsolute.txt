@@ -9,3 +9,15 @@
 /Users/marc/Documents/Clase/Programación/3r Trimestre/AC1/Ac1/obj/Debug/net8.0/Ac1.dll
 /Users/marc/Documents/Clase/Programación/3r Trimestre/AC1/Ac1/obj/Debug/net8.0/refint/Ac1.dll
 /Users/marc/Documents/Clase/Programación/3r Trimestre/AC1/Ac1/obj/Debug/net8.0/Ac1.pdb
+/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/obj/Debug/net8.0/Ac1.csproj.AssemblyReference.cache
+/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/obj/Debug/net8.0/Ac1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/obj/Debug/net8.0/Ac1.AssemblyInfoInputs.cache
+/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/obj/Debug/net8.0/Ac1.AssemblyInfo.cs
+/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/obj/Debug/net8.0/Ac1.csproj.CoreCompileInputs.cache
+/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/obj/Debug/net8.0/Ac1.sourcelink.json
+/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/obj/Debug/net8.0/Ac1.dll
+/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/obj/Debug/net8.0/refint/Ac1.dll
+/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/obj/Debug/net8.0/Ac1.pdb
+/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/bin/Debug/net8.0/Ac1
+/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/bin/Debug/net8.0/Ac1.dll
+/Users/marc/Documents/Clase/Programación/3r Trimestre/AC9/Ac1/bin/Debug/net8.0/Ac1.pdb
